@@ -1,0 +1,400 @@
+# Listing of mart instances
+
+```{r, message=FALSE}
+library("biomaRt")
+```
+
+### [Pancreatic Expression Database](http://www.pancreasexpression.org/biomart/martview/1825ad73c61a3b177bda7e4f52b28d94)
+
+- [Barts Cancer Institute, UK](http://www.bci.qmul.ac.uk/): [Results from published pancreatic cancer papers](http://www.pancreasexpression.org/)
+
+```{r}
+host <- "pancreasexpression.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+
+### [Breast Cancer Campaign, UK and Ireland](http://www.breastcancercampaign.org/page.aspx?pid=383)
+- [BCCTB Bioinformatics Portal](http://bioinformatics.breastcancertissuebank.org/biomart/martview/19e7e70c4304a66f8324d5396a2b3f09) - [Breast cancer tissue information](http://www.breastcancertissuebank.org/about-tissue-bank.php)
+
+```{r}
+host <- "bioinformatics.breastcancertissuebank.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Center for Mathematical Modeling and Center for Genome Regulation (CMM), Chile](http://www.cmm.uchile.cl/index.php?option=detalle&CodigoNoticia=1604&lang=en)
+- [SalmonDB](http://salmonmart.cmm.uchile.cl/biomart/martview) - [Genomic information for Atlantic salmon, rainbow trout, and related species](http://genomicasalmones.dim.uchile.cl)
+
+```{r}
+host <- "salmonmart.cmm.uchile.cl"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+
+### [Centre National de la Recherche Scientifique (CNRS), France](http://www.cnrs.fr/)
+- [Cildb](http://cildb.cgm.cnrs-gif.fr/v2/biomart/martview/71e0e9c5ea5f77b7dda54c6d00cc26a2) - [Database for eukaryotic cilia and centriolar structures, integrating orthology relationships for 33 species with high throughput studies and OMIM](http://cildb.cgm.cnrs-gif.fr/)
+
+```{r}
+host <- "cildb.cgm.cnrs-gif.fr"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [Paramecium DB](http://paramecium.cgm.cnrs-gif.fr/biomart/martview/3cfa14c55fe847423b606917fe7010a3) - [Paramecium genome database](http://paramecium.cgm.cnrs-gif.fr/)
+
+```{r}
+host <- "paramecium.cgm.cnrs-gif.fr"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Cold Spring Harbor Laboratory (CSHL), US](http://www.cshl.edu/)
+
+- [Gramene](http://www.gramene.org/Multi/martview) - [Agriculturally important grass genomes](http://www.gramene.org)
+
+```{r}
+host <- "www.gramene.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+
+- [WormBase](http://caprica.caltech.edu:9002/biomart/martview) = [C. elegans and related nematode genomic information](http://www.wormbase.org/)
+
+```{r}
+host <- "www.caprica.caltech.edu"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Department of Genetics, University of Cambridge, Cambridge, UK](http://www.gen.cam.ac.uk/)
+
+- [DAPPER](http://dapper.gen.cam.ac.uk/) - [Mass spec identified protein interaction networks in Drosophilacell cycle regulation](http://dapper.gen.cam.ac.uk/biomart/martview)
+
+```{r}
+host <- "dapper.gen.cam.ac.uk"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [European Bioinformatics Institute (EBI), UK](http://www.ebi.ac.uk/)
+
+- [Ensembl Genomes](http://fungi.ensembl.org/biomart/martview) - [Genome databases for fungi, metazoa, plants and protists](http://ensemblgenomes.org)
+
+```{r}
+host <- "fungi.ensembl.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [HGNC](http://www.genenames.org/biomart/martview) - [Repository of human gene nomenclature and associated resources](http://www.genenames.org/)
+
+```{r}
+host <- "www.genenames.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [InterPro](http://www.ebi.ac.uk/interpro/biomart/martview) - [Integrated database of predictive protein "signatures" used for the classification and automatic annotation of proteins and genomes](http://www.ebi.ac.uk/interpro/)
+
+```{r}
+host <- "www.ebi.ac.uk"
+path <- "/interpro/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [PRIDE](http://www.ebi.ac.uk/pride/prideMart.do) - [Repository for protein and peptide identifications](http://www.ebi.ac.uk/pride/)
+
+```{r}
+host <- "www.ebi.ac.uk"
+path <- "/pride/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [UniProt](http://www.ebi.ac.uk/uniprot/biomart/martview) - [Protein sequence and functional information](http://www.ebi.ac.uk/uniprot/)
+
+
+```{r}
+host <- "www.ebi.ac.ul"
+path <- "/uniprot/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [WormBase ParaSite](http://parasite.wormbase.org/biomart/martview) - [Parasitic worms (helminths) are responsible for more than a billion human infections globally and have a devastating impact on livestock and agriculture](http://parasite.wormbase.org/index.html)
+
+
+```{r}
+host <- "parasite.wormbase.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Harwell Science and Innovation Campus (MRC Harwell), UK](http://www.har.mrc.ac.uk/index.html)
+
+- [EuroPhenome](http://www.europhenome.org/biomart.php) - [Mouse phenotyping data](http://www.europhenome.org/)
+
+
+```{r}
+host <- "www.europhenome.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Information Center for Bio-pharmacological Network (i-Pharm), South Korea](http://www.i-pharm.org/)
+
+- [i-Pharm](http://biomart.i-pharm.org/) - [Pharmacological network database consisting of three kinds of nodes: human diseases, drugs, and proteins](http://www.i-pharm.org/")
+
+```{r}
+host <- "biomart.i-pharm.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Institut national de la santé et de la recherche médicale (Inserm), France](http://www.inserm.fr/)
+
+- [GermOnline](http://www.germonline.org/biomart/martview) - [Cross-species microarray expression database focusing on germline development, meiosis, and gametogenesis as well as the mitotic cell cycle](http://www.germonline.org/)
+
+
+```{r}
+host <- "www.germonline.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Institut Nationale de Recherche Agronomique (INRA), Unité de Recherche en Génomique-Info (URGI), France](http://urgi.versailles.inra.fr)
+
+- [GnpIS](http://urgi.versailles.inra.fr/biomart/martview/)	- [Genetic and Genomic Information System (GnpIS)](http://urgi.versailles.inra.fr/gnpis/)
+
+```{r}
+host <- "urgi.versailles.inra.fr"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [UniProt](http://www.ebi.ac.uk/uniprot/biomart/martview) - [Protein sequence and functional information](http://www.ebi.ac.uk/uniprot/)
+
+
+```{r}
+host <- "www.ebi.ac.uk"
+path <- "/uniprot/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [International Potato Center (CIP), Peru](http://www.cipotato.org)
+
+- [Potato database](http://germplasmdb.cip.cgiar.org/) - [Potato and sweetpotato phenotypic and genomic information](http://www.cipotato.org/)
+
+```{r}
+host <- "germplasmdb.cip.cgiar.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Jackson Laboratory, US](http://www.jax.org/)
+
+- [MGI](http://biomart.informatics.jax.org/biomart/martview) - [Mouse genome features, locations, alleles, and orthologs](http://informatics.jax.org/)
+
+```{r}
+host <- "biomart.informatics.jax.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Joint Genome Institute (JGI)/Center for Integrative Genomics (CIG), US](http://www.jgi.doe.gov/)
+
+- [Phytozome](http://www.phytozome.net/biomart/martview) - [Comparative genomics of green plants](http://www.phytozome.net/)
+
+```{r}
+host <- "www.phytozome.net"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Kazusa DNA Research Institute (Kazusa), Japan](http://www.kazusa.or.jp/e/)
+
+- [KazusaMart](http://mart.kazusa.or.jp/biomart/martview) - [Cyanobase, rhizobia, and plant genome databases](http://mart.kazusa.or.jp/)
+
+```{r}
+host <- "mart.kazusa.or.jp"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Medical Research Council, Human Genetics Unit (MRC HGU), UK](http://www.hgu.mrc.ac.uk/)
+
+- [EMAGE](http://biomart.emouseatlas.org/) - [Anatomy ontology and in situ gene expression data in the mouse ontology](http://www.emouseatlas.org/emage/home.php)
+
+```{r}
+host <- "biomart.emouseatlas.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [Eurexpress](http://www.eurexpress.org/ee/databases/biomart.jsp) - [Transcriptome atlas database for mouse embryo](http://www.eurexpress.org/)
+
+```{r}
+host <- "www.eurexpress.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [National Center for Biotechnology Information (NCBI), US](http://www.ncbi.nlm.nih.gov/)
+
+- [HapMap](http://hapmart.hapmap.org/BioMart/martview) - [Multi-country effort to identify and catalog genetic similarities and differences in human beings](http://hapmap.org/)
+
+```{r}
+host <- "www.hapmap.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Peking University, China](http://english.pku.edu.cn/)
+
+- [Rice-Map](href="http://ricemart.cbi.edu.cn/biomart/martview) - [Rice (japonica and indica) genome annotation database](ttp://www.ricemap.org/)
+
+
+```{r}
+host <- "ricemart.cbi.edu.cn"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [RhesusBase](http://www.rhesusbase.org:9000) - [A knowledgebase for the monkey research community](http://www.rhesusbase.org)
+
+
+```{r}
+host <- "www.rhesusbase.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [RIKEN Center for Life Science Technologies (CLST), Japan](http://www.riken.jp/en/research/labs/clst/)
+
+- [FANTOM5](http://fantom.gsc.riken.jp) - [The FANTOM5 project mapped a promoter level expression atlas in human and mouse. The FANTOM5 BioMart instance provides the set of promoters along with annotation](http://fantom.gsc.riken.jp/5/biomart/martview/)
+
+
+```{r}
+host <- "fantom.gsc.riken.jp"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [University of Leicester, UK](http://www2.le.ac.uk/departments/genetics/research/bioinformatics)
+
+- [GWAS Central](https://www.gwascentral.org/biomart/martview/) - [GWAS Central provides a centralized compilation of summary level findings from genetic association studies, both large and small](http://www.gwascentral.org/info/about/)
+
+```{r}
+host <- "www.gwascentral.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [INRA - French National Institute of Agricultural Research, France](http://www.inra.fr/)
+
+- [sigReannot](http://sigreannot-mart.toulouse.inra.fr/) - [Aquaculture and farm animal species microarray probes re-annotation](http://www.sigenae.org/)
+
+```{r}
+host <- "sigreannot-mart.toulouse.inra.fr"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [GnpIS](https://urgi.versailles.inra.fr/biomart/martview/) - [Genetic and Genomic Information System (GnpIS)](https://urgi.versailles.inra.fr/gnpis/)
+
+```{r}
+host <- "urgi.versailles.inra.fr"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+
+### [Iowa State University, US](http://www.iastate.edu/)
+
+- [Animal Genome database](http://www.animalgenome.org:8181/) - [Agriculturally important livestock genomes](http://www.animalgenome.org/)
+
+```{r}
+host <- "animalgenome.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+###  [University of Notre Dame, US](http://nd.edu/)
+
+- [VectorBase](http://biomart.vectorbase.org/biomart/martview) - [Genome information for invertebrate vectors of human pathogens](http://vectorbase.org/)
+
+```{r}
+host <- "biomart.vectorbase.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Universitat Pompeu Fabra (UPF), Spain](http://www.upf.edu/en/)
+
+- [Regulatory Genomics Group](http://archimedes.imim.es:9009/biomart/martview/36e00ae657f7efc9f276fcddf155c8ce) - [Predictive Models of Gene Regulation from High-Throughput Epigenomics Data](http://regulatorygenomics.upf.edu/group/)
+
+```{r}
+host <- "archimedes.imim.es0"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+
+### [University of Trento, Italy](http://www.unitn.it/en)
+
+- [http://aura.science.unitn.it/biomart/martview/](http://aura.science.unitn.it/biomart/martview/) - [Atlas of UTR Regulatory Activity (AURA)](http://www.unitn.it/en)
+
+```{r}
+host <- "aura.science.unitn.it"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+### [Wellcome Trust Sanger Institute (WTSI), UK](http://www.sanger.ac.uk/)
+
+- [COSMIC](http://www.sanger.ac.uk/genetics/CGP/cosmic/biomart/martview) - [Somatic mutation information relating to human cancers](http://www.sanger.ac.uk/genetics/CGP/cosmic/)
+
+```{r}
+host <- "www.sanger.ac.uk"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [Ensembl](http://www.ensembl.org/biomart/martview) - [Genome databases for vertebrates and other eukaryotic species](http://www.ensembl.org/)
+
+```{r}
+host <- "ensembl.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [VEGA](http://www.ensembl.org/biomart/martview) - [Manual annotation of vertebrate genome sequences](http://vega.sanger.ac.uk/)
+
+```{r}
+host <- "ensembl.org"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+- [Rfam](http://xfam-biomart.sanger.ac.uk/) - [The Rfam database is a collection of RNA families, each represented by multiple sequence alignments, consensus secondary structures and covariance models (CMs)](http://rfam.sanger.ac.uk)
+
+```{r}
+host <- "xfam-biomart.sanger.ac.uk"
+path <- "/biomart/martservice"
+listMarts(mart=NULL, host, path)
+```
+
+
+```{r}
+listMarts(mart = NULL, host="plants.ensembl.org", path="/biomart/martservice")
+listMarts(mart = NULL, host="fungi.ensembl.org", path="/biomart/martservice")
+listMarts(mart = NULL, host="metazoa.ensembl.org", path="/biomart/martservice")
+```
+
+
+## References
+
+- http://www.biomart.org/community.html
+- https://support.bioconductor.org/p/75730/#75786
