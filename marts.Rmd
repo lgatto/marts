@@ -398,3 +398,9 @@ listMarts(mart = NULL, host="metazoa.ensembl.org", path="/biomart/martservice")
 
 - http://www.biomart.org/community.html
 - https://support.bioconductor.org/p/75730/#75786
+
+## Sessoin information
+
+```{r}
+sessionInfo()
+```

@@ -264,21 +264,12 @@ listMarts(mart=NULL, host, path)
 ```
 
 ```
-## Space required after the Public Identifier
-## SystemLiteral " or ' expected
-## SYSTEM or PUBLIC, the URI is missing
-## Opening and ending tag mismatch: hr line 9 and body
-## Opening and ending tag mismatch: body line 4 and html
-## Premature end of data in tag html line 2
-```
-
-```
-## Error: 1: Space required after the Public Identifier
-## 2: SystemLiteral " or ' expected
-## 3: SYSTEM or PUBLIC, the URI is missing
-## 4: Opening and ending tag mismatch: hr line 9 and body
-## 5: Opening and ending tag mismatch: body line 4 and html
-## 6: Premature end of data in tag html line 2
+##                  biomart                       version
+## 1 europhenomeannotations       Europhenome Annotations
+## 2           emma_biomart                          EMMA
+## 3                biomart   MGI (Jackson Laboratory US)
+## 4     Eurexpress Biomart EUREXPRESS (MRC EDINBURGH UK)
+## 5                ensembl  ENSEMBL GENES 61 (SANGER UK)
 ```
 
 ### [Information Center for Bio-pharmacological Network (i-Pharm), South Korea](http://www.i-pharm.org/)
@@ -1597,3 +1588,39 @@ listMarts(mart = NULL, host="metazoa.ensembl.org", path="/biomart/martservice")
 
 - http://www.biomart.org/community.html
 - https://support.bioconductor.org/p/75730/#75786
+
+## Sessoin information
+
+
+```r
+sessionInfo()
+```
+
+```
+## R Under development (unstable) (2015-12-17 r69781)
+## Platform: x86_64-pc-linux-gnu (64-bit)
+## Running under: Ubuntu 14.04.3 LTS
+## 
+## locale:
+##  [1] LC_CTYPE=en_GB.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=en_GB.UTF-8        LC_COLLATE=en_GB.UTF-8    
+##  [5] LC_MONETARY=en_GB.UTF-8    LC_MESSAGES=en_GB.UTF-8   
+##  [7] LC_PAPER=en_GB.UTF-8       LC_NAME=C                 
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+## [11] LC_MEASUREMENT=en_GB.UTF-8 LC_IDENTIFICATION=C       
+## 
+## attached base packages:
+## [1] methods   stats     graphics  grDevices utils     datasets  base     
+## 
+## other attached packages:
+## [1] biomaRt_2.27.2
+## 
+## loaded via a namespace (and not attached):
+##  [1] IRanges_2.5.18       XML_3.98-1.3         bitops_1.0-6        
+##  [4] DBI_0.3.1            stats4_3.3.0         formatR_1.2.1       
+##  [7] magrittr_1.5         evaluate_0.8         RSQLite_1.0.0       
+## [10] stringi_1.0-1        S4Vectors_0.9.15     tools_3.3.0         
+## [13] stringr_1.0.0        Biobase_2.31.3       RCurl_1.95-4.7      
+## [16] parallel_3.3.0       BiocGenerics_0.17.2  AnnotationDbi_1.33.4
+## [19] knitr_1.11
+```
